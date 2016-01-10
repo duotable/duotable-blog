@@ -1,0 +1,5 @@
+@media (max-width: 460px) {
+  .recipe-section h2 {
+    font-size: 20px;
+  }
+}
