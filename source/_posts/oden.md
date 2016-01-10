@@ -1,7 +1,10 @@
 ---
 title: Oden おでん。
+date: 2016-01-01 08:00:12
 img_src: http://41.media.tumblr.com/4b0168545adf17b1f991a88c344548ae/tumblr_inline_o0jwaoEN111tjcp5t_1280.jpg
 
+recipe_title: Recipe
+ingredients_subtitle: 6 servings
 ingredients:
 - 1 cake konnyaku (devil’s tongue jelly)
 - salt
@@ -41,6 +44,8 @@ cook_steps:
 - Pour boiling water over the ganmodoki to remove excess oil, drain, and cut into halves or quarters, depending on the size of the cake (just cut grilled bean curd into 1-inch cubes).
 - Cut the fish products—chikuwa, kamaboki, and satsuma-age—into 1.5-inch pieces.
 - Leave the boiled and shelled egg whole.
+
+end_section: <p>There is a whole spectrum of oden ingredients made by professional oden ingredient makers in Japan. Some of these are packaged and may find their way to Japanese food stores outside Japan. Except the ingredients on the list, I bought a lot of different kind of new flavors just to try out. Please let me know what kind of ingredients you like to put in your oden, classic or new flavor. Happy new year everyone!</p><img src='http://36.media.tumblr.com/f76a8bde84d1ab5a37700f972ef8bad9/tumblr_inline_o0jwgux5RH1tjcp5t_1280.jpg'>
 ---
 
 ![Oden](http://41.media.tumblr.com/4b0168545adf17b1f991a88c344548ae/tumblr_inline_o0jwaoEN111tjcp5t_1280.jpg)

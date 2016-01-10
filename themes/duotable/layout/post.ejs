@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <h1><%- page.title %></h1>
-      <div class='text-muted'>
+      <div class='created-date text-muted'>
         <%= date(page.date, config.date_format) %>
       </div>
       <div class="content">
@@ -26,10 +26,15 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-4 col-md-offset-2">
+  <div class="row recipe-section">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h2 class="recipe-title"><%- page.recipe_title %></h2>
+      <p class="recipe-subtitle"><%- page.recipe_subtitle %></p>
+    </div>
+    <div class="col-md-4 col-md-offset-2 ingredients-section">
       <% if (page.ingredients) { %>
       <h2>Ingredients</h2>
+      <div class="ingredients-subtitle"><%- page.ingredients_subtitle %></div>
       <ul>
         <% for (var i=0; page.ingredients.length > i; i++){ %>
         <li><%- page.ingredients[i] %></li>
@@ -44,29 +49,100 @@
           <% } %>
         </ul>
       <% } %>
+      <% if (page.ingredients3_title) { %>
+        <h3><%= page.ingredients3_title %></h3>
+        <ul>
+          <% for (var i=0; page.ingredients3.length > i; i++){ %>
+          <li><%- page.ingredients3[i] %></li>
+          <% } %>
+        </ul>
+      <% } %>
     </div>
     <div class="col-md-4">
       <% if (page.prepare_steps) { %>
       <div class="prepare-section">
         <h2>To prepare</h2>
-        <ul>
+        <ol>
           <% for (var i=0; page.prepare_steps.length > i; i++){ %>
             <li><%- page.prepare_steps[i] %></li>
           <% } %>
-        </ul>
+        </ol>
       </div>
       <% } %>
       <% if (page.cook_steps) { %>
       <div class="cook-section">
         <h2>To cook and serve</h2>
-        <ul>
+        <ol>
           <% for (var i=0; page.cook_steps.length > i; i++){ %>
             <li><%- page.cook_steps[i] %></li>
           <% } %>
-        </ul>
+        </ol>
       </div>
       <% } %>
     </div>
   </div>
+
+  <% if (page.recipe2_title) { %>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="separator">
+      </div>
+    </div>
+  </div>
+
+  <div class="row recipe-section">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h2 class="recipe-title"><%- page.recipe2_title %></h2>
+    </div>
+    <div class="col-md-4 col-md-offset-2">
+      <% if (page.recipe2_ingredients) { %>
+      <h2>Ingredients</h2>
+      <div class="ingredients-subtitle"><%- page.recipe2_ingredients_subtitle %></div>
+      <ul>
+        <% for (var i=0; page.recipe2_ingredients.length > i; i++){ %>
+        <li><%- page.recipe2_ingredients[i] %></li>
+        <% } %>
+      </ul>
+      <% } %>
+    </div>
+    <div class="col-md-4">
+      <% if (page.recipe2_prepare_steps) { %>
+      <div class="prepare-section">
+        <h2>To prepare</h2>
+        <ol>
+          <% for (var i=0; page.recipe2_prepare_steps.length > i; i++){ %>
+            <li><%- page.recipe2_prepare_steps[i] %></li>
+          <% } %>
+        </ol>
+      </div>
+      <% } %>
+      <% if (page.recipe2_cook_steps) { %>
+      <div class="cook-section">
+        <h2>To cook and serve</h2>
+        <ol>
+          <% for (var i=0; page.recipe2_cook_steps.length > i; i++){ %>
+            <li><%- page.recipe2_cook_steps[i] %></li>
+          <% } %>
+        </ol>
+      </div>
+      <% } %>
+    </div>
+  </div>
+  <% } %>
+
+  <% if (page.end_section) { %>
+  <div class="row end-section">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="separator">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+    <%- page.end_section %>
+    </div>
+  </div>
+  <% } %>
 
 </div>

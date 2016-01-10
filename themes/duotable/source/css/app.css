@@ -9,14 +9,20 @@ a:focus, a:hover {
 
 .logo-container {
   padding: 20px 0 5px;
-  background-color: #ffcb4c;
 }
+/*.logo {
+  display: block;
+  margin-left: 0px;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 113px 80px;
+  width: 113px;
+  height: 80px;
+}*/
 .logo {
-  color: #1e282f;
-  font-size: 25px;
-  font-weight: 700;
-  font-family: 'Arvo', serif;
-  margin-left: 15px;
+  display: block;
+  height: 40px;
+  font-size: 40px;
+  font-family: 'Cabin Sketch', sans-serif;
 }
 
 .posts {
@@ -26,17 +32,25 @@ a:focus, a:hover {
 .post {
   display: block;
   padding-bottom: 20px;
+
 }
 .post h3 {
+  transition: all 0.5s ease;
   color: #1e282f;
   font-size: 19px;
+}
+.post .image img {
+  transition: all 0.5s ease;
+  opacity: 0.95;
+  width: 100%;
+}
+.post:hover img {
+  opacity: 1.0;
 }
 .post:hover h3 {
   color: #62a5a1;
 }
-.image img {
-  width: 100%;
-}
+
 
 /* Post */
 .post-container {
@@ -49,22 +63,46 @@ a:focus, a:hover {
   margin-bottom: 20px;
   font-weight: bold;
 }
+.created-date {
+  margin: 10px 0;
+}
 p {
   font-size: 16px;
 }
 
 .separator {
-  margin: 20px 0 0;
+  margin: 20px 0 20px;
   width: 100%;
   height: 1px;
   background-color: #c5b9a0;
 }
 
-ul {
-  margin: 0;
+.recipe-title {
+  margin-top: 0px;
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'Georgia', sans-serif;
+}
+.recipe-subtitle {
+  font-weight: normal;
+  font-family: 'Georgia', sans-serif;
+}
+.recipe-section h2 {
+  margin-bottom: 5px;
+}
+.ingredients-subtitle {
+  font-size: 16px;
+  color: #797c80;
+}
+
+ul, ol {
+  margin: 15px 0 0;
   padding: 0 0 0 20px;
 }
 ul li {
-  margin: 0;
+  margin: 0 0 5px 0;
   list-style-type: disc;
+}
+ol li {
+  margin: 0 0 5px 0;
 }
