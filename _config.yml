@@ -4,7 +4,7 @@
 
 # Site
 title: Duo Table
-subtitle:
+subtitle: Duo Table is a table.
 description:
 author: Duo Table
 language:
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://duotable.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -52,7 +52,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: MM.DD.YYYY
 time_format: HH:mm:ss
 
 # Pagination
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: duotable
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

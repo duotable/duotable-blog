@@ -1,0 +1,30 @@
+<div class='row'>
+  <div class="col-md-12">
+    <div class="logo-container">
+      <a href="/" class="logo"><%= config.author %></a>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="posts">
+    <% page.posts.each(function(post){ %>
+      <a href="<%- url_for(post.path) %>" class="post col-sm-4 col-md-3 col-sd-5ths col-lg-4">
+        <div class="image">
+          <img src="<%= post.img_src %>" alt="" />
+        </div>
+        <h3>
+          <%= post.title %>
+        </h3>
+        <div class='text-muted'>
+          <%= date(post.date, config.date_format) %>
+        </div>
+        <% if(post.excerpt) { %>
+          <p>
+            <%- post.excerpt %>
+          </p>
+        <% } %>
+      </a>
+    <% }) %>
+  </div>
+</div>
